@@ -1,10 +1,8 @@
-import React from 'react';
+import { NewRoom } from './pages/NewRoom';
 
 function App() {
   return (
-    <div className="App">
-        Hello World
-    </div>
+    <NewRoom />
   );
 }
 
