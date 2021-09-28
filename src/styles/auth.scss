@@ -1,4 +1,5 @@
 #page-auth {
+  // para colocar a tela indo até embaixo com os itens centralizados
   display: flex;
   align-items: stretch;
   height: 100vh;
@@ -7,12 +8,12 @@
     flex: 7;
 
     background: #835afd;
-    color: #FFF;
+    color: #fff;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     padding: 120px 80px;
 
     img {
@@ -20,7 +21,7 @@
     }
 
     strong {
-      font: 700 36px 'Poppins', sans-serif;
+      font: 700 36px "Poppins", sans-serif;
       line-height: 42px;
       margin-top: 16px;
     }
@@ -28,6 +29,7 @@
     p {
       font-size: 24px;
       line-height: 32px;
+      // para ajudar as linhas não ficarem grudadas
       margin-top: 16px;
       color: #f8f8f8;
     }
@@ -48,17 +50,19 @@
     flex-direction: column;
     width: 100%;
     max-width: 320px;
+    //estica os elementos para ocupar o espaço
     align-items: stretch;
     text-align: center;
 
     > img {
+      //corta o align-items stretch para garantir o tamanho da imagem
       align-self: center;
     }
 
     h2 {
       font-size: 24px;
       margin: 64px 0 24px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
 
     form {
@@ -66,15 +70,16 @@
         height: 50px;
         border-radius: 8px;
         padding: 0 16px;
-        background: #FFF;
+        background: #fff;
         border: 1px solid #a8a8b3;
       }
 
-      button { 
+      button {
         margin-top: 16px;
       }
 
-      button, input {
+      button,
+      input {
         width: 100%;
       }
     }
@@ -96,7 +101,7 @@
     border-radius: 8px;
     font-weight: 500;
     background: #ea4335;
-    color: #FFF;
+    color: #fff;
 
     display: flex;
     justify-content: center;
@@ -124,8 +129,9 @@
     display: flex;
     align-items: center;
 
+    //cria a linha separadora
     &::before {
-      content: '';
+      content: "";
       flex: 1;
       height: 1px;
       background: #a8a8b3;
@@ -133,7 +139,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       flex: 1;
       height: 1px;
       background: #a8a8b3;
