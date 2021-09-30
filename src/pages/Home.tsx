@@ -14,7 +14,7 @@ import { TestContext } from '../App'
 
 export function Home() {
   const history = useHistory();
-  const value = useContext(TestContext)
+  const { value, setValue } = useContext(TestContext)
 
   function handleCreateRoom() {
     const provider = new firebase.auth.GoogleAuthProvider()
