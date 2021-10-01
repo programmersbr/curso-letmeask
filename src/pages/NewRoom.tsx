@@ -10,7 +10,8 @@ import { TestContext } from '../App';
 import '../styles/auth.scss';
 
 export function NewRoom() {
-    const value = useContext(TestContext)
+    const { value, setValue } = useContext(TestContext)
+    
     return (
         <div id="page-auth">
             <aside>

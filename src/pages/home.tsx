@@ -10,11 +10,8 @@ import googleIconImg from '../assets/images/google-icon.svg'
 import '../styles/auth.scss'
 import { Button } from '../components/Button'
 
-import { TestContext } from '../App'
-
 export function Home() {
   const history = useHistory();
-  const { value, setValue } = useContext(TestContext)
 
   function handleCreateRoom() {
     const provider = new firebase.auth.GoogleAuthProvider()
@@ -35,7 +32,6 @@ export function Home() {
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>
       <main>
-        <h1>{value}</h1>
         <div className="main-content">
           <img src={logoImg} alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-room">
